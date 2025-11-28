@@ -9,27 +9,7 @@ interface Skill {
     details?: string;
 }
 
-const SkillBar = ({ level }: { level: SkillLevel }) => {
-    const getLevelConfig = (level: SkillLevel) => {
-        switch (level) {
-            case 'Notions': return { width: '33%', color: 'bg-teal-600/40 dark:bg-teal/40' };
-            case 'Intermédiaire': return { width: '66%', color: 'bg-teal-600/70 dark:bg-teal/70' };
-            case 'Avancé': return { width: '100%', color: 'bg-teal-600 dark:bg-teal' };
-            default: return { width: '0%', color: 'bg-gray-500' };
-        }
-    };
 
-    const config = getLevelConfig(level);
-
-    return (
-        <div className="w-24 h-1.5 bg-slate-200 dark:bg-navy-lighter rounded-full overflow-hidden mt-1">
-            <div
-                className={`h-full rounded-full ${config.color}`}
-                style={{ width: config.width }}
-            ></div>
-        </div>
-    );
-};
 
 const SkillCard = ({ title, icon: Icon, skills, className = '' }: { title: string, icon: any, skills: Skill[], className?: string }) => (
     <div className={`bg-white dark:bg-navy-light p-6 rounded shadow-lg hover:-translate-y-1 transition-transform duration-300 border border-slate-200 dark:border-teal/5 ${className}`}>
@@ -44,7 +24,7 @@ const SkillCard = ({ title, icon: Icon, skills, className = '' }: { title: strin
                         <span className="text-slate-700 dark:text-slate-light font-mono text-sm font-bold">{skill.name}</span>
                         {skill.level && <span className="text-xs text-teal-600/80 dark:text-teal/80 font-mono">{skill.level}</span>}
                     </div>
-                    {skill.level && <SkillBar level={skill.level} />}
+
                     {skill.details && (
                         <span className="text-xs text-slate-500 dark:text-slate-light/60 mt-1">{skill.details}</span>
                     )}
