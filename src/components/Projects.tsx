@@ -36,20 +36,7 @@ const PROJECTS: ProjectData[] = [
             "Création de mesures DAX complexes pour le suivi de l'activité",
             "Mise en place d'un processus ETL automatisé"
         ],
-        tech: ["Power BI", "SSAS", "SQL", "ETL"]
-    },
-    {
-        title: "Analyse de ventes",
-        category: "Data Analysis",
-        description: "Analyse approfondie des données de vente pour identifier les tendances, les produits performants et les opportunités de croissance.",
-        longDescription: "Une analyse complète des données de vente sur 3 ans pour une entreprise de retail fictive. L'objectif était de comprendre les comportements d'achat et la saisonnalité.",
-        context: "Exercice pratique de Business Intelligence pour simuler un cas réel d'entreprise souhaitant lancer une nouvelle gamme.",
-        results: [
-            "Nettoyage et structuration d'un jeu de données complexe",
-            "Segmentation client (Méthode RFM) via SQL",
-            "Visualisation interactive des tendances saisonnières"
-        ],
-        tech: ["Power BI", "SQL", "Excel"]
+        tech: ["Power BI", "SQL", "ETL"]
     },
     {
         title: "Dashboard RH",
