@@ -6,7 +6,7 @@ import ProjectModal, { type ProjectData } from './ProjectModal';
 const PROJECTS: ProjectData[] = [
     {
         title: "Analyse des ventes d'un Hyper Marché",
-        category: "Power BI / ETL",
+        category: "Power BI / ETL)",
         description: "Tableau de bord interactif développé avec Power BI pour analyser les ventes, les profits et les performances produit d'un Hyper Marché avec des KPI commerciaux et tendances mensuelles.",
         longDescription: "Ce projet présente un tableau de bord interactif développé avec Power BI Desktop pour analyser les ventes, les profits et les performances produit d'un Hyper Marché. L'objectif est de fournir une vue synthétique et exploitable des KPI commerciaux, des tendances mensuelles et de la contribution des segments et catégories. Le dataset Hyper Store a été entièrement traduit en français pour harmoniser les colonnes et le rendu du rapport.",
         context: "Projet personnel visant à démontrer mes compétences en Business Intelligence et en transformation de données. Le travail comprend un processus ETL complet avec Power Query, la création d'un modèle de données optimisé, et le développement de visualisations interactives permettant d'explorer les performances par continent, segment et catégorie.",
